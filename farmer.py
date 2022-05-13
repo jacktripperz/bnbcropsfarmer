@@ -28,7 +28,7 @@ cycle = cmanager.build_cycle_from_config()
 
 # methods
 def compound():
-    txn = dm_contract.functions.hireMoreFarmers(true).buildTransaction(c.get_tx_options(wallet_public_addr, 500000))
+    txn = dm_contract.functions.hireMoreFarmers(True).buildTransaction(c.get_tx_options(wallet_public_addr, 500000))
     return c.send_txn(txn, wallet_private_key)
 
 def claim():
@@ -36,11 +36,11 @@ def claim():
     return c.send_txn(txn, wallet_private_key)
 
 def my_crops():
-    total = dm_contract.functions.getMyMiners(wallet_public_addr).call()
+    total = dm_contract.functions.getMyMiners().call()
     return total
 
 def payout_to_compound():
-    total = dm_contract.functions.cropRewards(wallet_public_addr).call()
+    total = dm_contract.functions.getAvailableEarnings(wallet_public_addr).call()
     return total/1000000000000000000
 
 def buildTimer(t):
@@ -112,7 +112,7 @@ def itterate():
 
     sleep = loop_sleep_seconds 
     
-    print("********** Baked crops *******")
+    print("********** Crops Farmer *******")
     print(f"{timestampStr} Next cycle id: {nextCycleId}")
     print(f"{timestampStr} Next cycle type: {nextCycleType}")
     print(f"{timestampStr} Next cycle time: {nextCycleTime}")
