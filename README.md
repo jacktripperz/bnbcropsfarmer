@@ -1,7 +1,7 @@
 # BNB CropsFarmer
 
 BNB CropsFarmer is a daily ROI platform that allows
-you to earn up to 8% daily return on your investment sustainably through a tax system
+you to earn up to 6% daily return on your investment sustainably through a tax system
 on transactions. It also allows team building through a referral system.
 
 ## Disclaimer
