@@ -1,9 +1,8 @@
-# Baked Beans Intro
+# BNB CropsFarmer
 
-Baked Beans is a daily ROI platform that allows
+BNB CropsFarmer is a daily ROI platform that allows
 you to earn up to 8% daily return on your investment sustainably through a tax system
-on transactions. It also allows team building through a referral system. 
-It is recommended to keep a 6-1 ratio, meaning you should rebake 6 times, eat 1 time, rebake 6 times, eat 1 time, etc.
+on transactions. It also allows team building through a referral system.
 
 ## Disclaimer
 Signing transactions via this script requires the use of a **`wallet's private key`** meaning you need to **`handle your private key locally`** on the computer from which you want to run this script on.
@@ -15,11 +14,11 @@ The script relies on many things - such as blockchain congestion, dropped networ
 1. A clean and secure computer/nuc/raspberry pi that can run 24/7.
 2. Minor programming knowledge
 
-## The Baked Beans
+## BNB CropsFarmer
 
-The [Baked beans](https://bakedbeans.io?ref=0x361472B5784e83fBF779b015f75ea0722741f304) is a high risk, high reward contract that operates similar to a high yield 
+The [BNB CropsFarmer](https://bnb.cropsfarmer.online?ref=0x067277b8ffe9623799b7f2b2d83593e191684993) is a high risk, high reward contract that operates similar to a high yield 
 certificate of deposit. You can participate by investing through these steps: 
-1. Go to [Baked beans](https://bakedbeans.io?ref=0x361472B5784e83fBF779b015f75ea0722741f304) and deposit a minimum of 0.1 BNB 
+1. Go to [BNB CropsFarmer](https://bnb.cropsfarmer.online?ref=0x067277b8ffe9623799b7f2b2d83593e191684993) and deposit a minimum of 0.1 BNB 
 
 The purpose of this code is to automate a rebake/eat strategy for you. 
 
@@ -65,13 +64,13 @@ $ python -m pip install python-dotenv
 9. Copy the file `cycle_config.example.json` and save it as `cycle_config.json`. This file contains the definition of your strategy cycle.  [See the Cycle settings](#cycle-settings) on how to modify your cycle strategy.
 
 ## Cycle settings
-The script includes a cycle-manager. This means that you can determine a cycle on when to `rebake` and when to `eat`.
+The script includes a cycle-manager. This means that you can determine a cycle on when to `compound` and when to `claim`.
 The file called `cycle_config.example.json` shows an example on how a cycle could look like.
 One cycle includes 4 inputs:
 - Id (1-indexed, meaning that the first cycle should always start with 1)
-- Type (either use `rebake` or `eat`)
+- Type (either use `compound` or `compound`)
 - EndTimerAt (Specifies the time of day where the cycle ends. For example with "20:00" (8pm) or "08:00" (8am). You can set the time of day as you please. By adding two or more cycles, you can setup your strategy to run every 3rd day, 12h or all the way down to each minute)
-- MinimumBnb (you might be able to rebake because 24h has past but you only want to rebake, when you have a minimum BNB of this value)
+- MinimumBnb (you might be able to compound because 24h has past but you only want to compound, when you have a minimum BNB of this value)
 
 Each cycle is defined by one iteration. Set as many iterations you want - just make sure to increment the `Id` of each iteration. When the cycle ends, it starts again from the top.
 
@@ -96,7 +95,7 @@ If this script helps you, consider supporting me by sending an airdrop:
 - **wallet:** *0x361472B5784e83fBF779b015f75ea0722741f304*
 
 Or using my referral code:
-- [Baked beans](https://bakedbeans.io?ref=0x361472B5784e83fBF779b015f75ea0722741f304)
+- [BNB CropsFarmer](https://bnb.cropsfarmer.online?ref=0x067277b8ffe9623799b7f2b2d83593e191684993)
 
 
 # Other projects to take a look at:
