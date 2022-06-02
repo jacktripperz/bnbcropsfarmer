@@ -74,7 +74,7 @@ One cycle includes 4 inputs:
 
 Each cycle is defined by one iteration. Set as many iterations you want - just make sure to increment the `Id` of each iteration. When the cycle ends, it starts again from the top.
 
-Defaults for each iteration in the example is set to `rebake` and to execute every day at "20:00" (8pm).
+Defaults for each iteration in the example is set to `compound` and to execute every day at "20:00" (8pm).
 
 ### Persisted cycle settings
 Cycle settings from your `cycle_config.json` are persisted. This means that the `nextCycleId` property is updated at the end of every cycle and you cycle loop never changes, so if you ever have to restart the script your cycle will never lose state and it will start from where it left off.
@@ -84,7 +84,7 @@ Cycle settings from your `cycle_config.json` are persisted. This means that the 
 In a terminal window, navigate to the location where you saved all the files. Run the `beany.py` file.
 
 ```bash
-$ python beany.py
+$ python farmer.py
 ```
 
 This terminal window will always need to remain open for the script to function. If the terminal window closes, just execute
